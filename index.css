@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.flex-1{
+    flex: 1;
+}
+
 body{
     background-color: #000000;
     /* background-color: #ede9ff; */
@@ -14,7 +18,7 @@ body{
     height: 100vh;
 }
 
-div{
+.cartao{
     width: 350px;
 }
 
@@ -36,4 +40,38 @@ p{
 .conteudo{
     background-color: #ffffff;
     padding: 40px;
+}
+
+.plano{
+    display: flex;
+    align-items: center;
+    background-color: #00000015;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icone{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #00000015;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 100%;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+
+    &.preenchido{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
 }
